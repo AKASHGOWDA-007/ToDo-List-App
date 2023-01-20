@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #E22865, #37ADCD);
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.nav h1 {
+    font-size: 2rem;
+}
+
+.nav h1 i {
+    margin-right: 5px;
+}
+
+.user-input {
+    width: 350px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.user-input input {
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 8px;
+    /* height: 35px; */
+    border-radius: 5px 0 0 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.user-input input:focus {
+    box-shadow: 0 0 5px #E22865;
+    border: 1px solid #E22865;
+}
+
+.user-input button {
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+}
+
+.user-input button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+#to-do-list {
+    width: 500px;
+    margin: auto;
+}
+
+#to-do-list .item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #454545;
+    height: 100%;
+    align-items: center;
+    font-size: 8px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 10px 0;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+#to-do-list .item:hover {
+    box-shadow: 0 0 5px #E22865;
+    border: 1px solid #E22865;
+}
+
+.item p {
+    font-size: 1rem;
+}
+
+#to-do-list .item .buttons {
+    font-size: 1rem;
+
+}
+
+#to-do-list .item .buttons i {
+    margin: 0 5px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav h1 {
+        margin-bottom: 10px;
+    }
+
+    .user-input {
+        width: 100%;
+    }
+
+    #to-do-list {
+        width: 100%;
+    }
+}
+
+@media(max-width:480px) {
+    .user-input input {
+        width: 74%;
+    }
+}
+
+@media(max-width:320px) {
+    .user-input input {
+        width: 60%;
+    }
+}
